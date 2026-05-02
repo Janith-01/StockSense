@@ -469,31 +469,6 @@ allow_origins=["yourdomain.com", "www.yourdomain.com"]
 
 ---
 
-## 🚀 Deployment
-
-### Deploy Backend (Heroku/Railway)
-
-1. Create `Procfile`:
-   ```
-   web: uvicorn main:app --host 0.0.0.0 --port $PORT
-   ```
-
-2. Push to platform:
-   ```bash
-   git push heroku main
-   ```
-
-### Deploy Frontend (Vercel)
-
-1. Push to GitHub
-2. Connect repository to Vercel
-3. Set environment variable:
-   ```
-   NEXT_PUBLIC_API_URL=https://your-backend-url.com
-   ```
-
----
-
 ## 📄 License
 
 This project is provided as-is for educational purposes.
